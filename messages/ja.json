@@ -1,0 +1,131 @@
+{
+  "answering_page": {
+    "answer_title": "解決",
+    "chat_interface": {
+      "clear_chat": "クリア",
+      "input_placeholder": "追加質問を入力...",
+      "title": "追加質問"
+    },
+    "open_conversation": "追加質問をクリック",
+    "question_title": "問題",
+    "regenerate_button": {
+      "idle": "再生成",
+      "loading": "再生成中..."
+    },
+    "return_button": "ホームページに戻る",
+    "tips": "回答はAIによって生成され、参考にしてください"
+  },
+  "auth": {
+    "description": "作成者は認証を有効にしています。以下の共有コードを入力してください",
+    "form": {
+      "confirm_button": "確認",
+      "confirm_button_loading": "検証中",
+      "input_code": "共有コードを入力してください",
+      "remember_code": "共有コードを記憶する"
+    },
+    "title": "コードを共有する必要がある"
+  },
+  "global": {
+    "error": {
+      "code-10001": "302 APIキーがありません",
+      "code-10002": "このツールは無効化/削除されています。詳細は <site>302.AI</site> をご覧ください。",
+      "code-10003": "ネットワークエラー、後でもう一度お試しください。",
+      "code-10004": "アカウント残高が不足しています。独自のツールを作成するには、 <site>302.AI</site> をご覧ください。",
+      "code-10005": "アカウントの資格情報が期限切れです。再度ログインしてください。",
+      "code-10006": "アカウントの総限度額に達しました。詳細は <site>302.AI</site> をご覧ください。",
+      "code-10007": "アカウントの日次限度額に達しました。詳細は <site>302.AI</site> をご覧ください。",
+      "code-10008": "現在利用可能なチャネルはありません。詳細は <site>302.AI</site> をご覧ください。",
+      "code-10009": "現在のAPI機能はサポートされていません。詳細は <site>302.AI</site> をご覧ください。",
+      "code-10010": "リソースが見つかりませんでした。詳細は <site>302.AI</site> をご覧ください。",
+      "code-10011": "無効なリクエスト。",
+      "code-10012": "この無料ツールは今時間の上限に達しました。 <site>302.AI</site> を訪問して自分のツールを作成してください。",
+      "code-10018": "アカウントの月次限度額に達しました。詳細は <site>302.AI</site> をご覧ください。",
+      "code-1024": "AIインターフェース接続がタイムアウトしました。しばらくしてから再試行するか、<site>302.AI</site> に連絡してください。",
+      "code_invalid": "共有コードが無効です。詳細は302.AIをご覧ください",
+      "copy_failed": "コピーに失敗しました",
+      "code-default": "不明なエラー、詳細は <site>302.AI</site> をご覧ください。",
+      "network_error": "ネットワークサービスエラー。ネットワーク状態を確認するか、後ほど再試行してください",
+      "not_found": "ページが存在しません",
+      "tool_deleted": "このツールは削除されました。詳細については、<site>302.AI</site> にアクセスしてください。",
+      "tool_disabled": "このツールは無効になっています。詳細については、<site>302.AI</site> にアクセスしてください。",
+      "unknown_error": "不明なエラーが発生しました。サポートにお問い合わせください"
+    },
+    "footer": {
+      "copyright_content": "<logo></logo>による提供",
+      "copyright_leading": "AI生成のコンテンツであり、参考用です"
+    },
+    "header": {
+      "language_switcher": {
+        "switch_language": "言語を切り替える"
+      },
+      "theme_switcher": {
+        "dark": "ダークモード",
+        "light": "ライトモード",
+        "system": "システムデフォルト",
+        "toggle_theme": "テーマを切り替える"
+      },
+      "tool_info": {
+        "description": "現在のツールに関する情報",
+        "title": "について",
+        "trigger": {
+          "label": "ツール情報ポップアップを開く/閉じる"
+        }
+      }
+    }
+  },
+  "home": {
+    "header": {
+      "title": "AI 解答機"
+    }
+  },
+  "tabs": {
+    "answer_records": "問題集",
+    "answering_records": {
+      "no_records": "まだ記録がありません",
+      "search_placeholder": "問題集を検索",
+      "date_from": "開始日",
+      "date_to": "終了日",
+      "select_date": "日付を選択",
+      "filter": "フィルター",
+      "filter_date": "日付フィルター",
+      "clear_filters": "フィルターをクリア",
+      "created_at": "作成日",
+      "updated_at": "更新日"
+    },
+    "crop_dialog": {
+      "alt": "切り取った画像",
+      "confirm_button": {
+        "answering": "問題を解決しています...",
+        "idle": "問題を解決し始める"
+      },
+      "title": "画像を切り取る"
+    },
+    "display_area": {
+      "placeholder_text": "クリックして写真を撮ります"
+    },
+    "image_based": "画像問題",
+    "record_card": {
+      "delete_button": "この問題解決を削除"
+    },
+    "text_based": "テキスト問題",
+    "text_explanation": {
+      "form": {
+        "errors": {
+          "textExplanation": "テキストは必須です",
+          "textExplanation_too_long": "テキストは300文字を超えてはいけません"
+        },
+        "idle": "問題を解決し始める",
+        "label": "テキストで問題を説明してください",
+        "placeholder": "e.g. 直角三角形の直角辺が3と4の場合、斜辺の長さを求めよ。",
+        "submit": "問題を解決しています..."
+      }
+    },
+    "upload_image": "クリックしてアルバムからインポート (ドラッグ アンド ドロップまたは貼り付けをサポート)",
+    "webcam_dialog": {
+      "take_photo": "写真を撮る",
+      "title": "写真を撮るか、ファイルをインポート",
+      "upload": "ファイルをインポート",
+      "camera_permission_error": "カメラのアクセス権を取得できませんでした。手動で有効にしてください"
+    }
+  }
+}
