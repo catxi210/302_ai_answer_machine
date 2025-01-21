@@ -24,14 +24,10 @@ export const apiKy = ky.create({
         const { apiKey } = store.get(appConfigAtom);
         const uiLanguage = store.get(languageAtom);
 
-        if (apiKey) {
-          request.headers.set("Authorization", `Bearer ${apiKey}`);
-        } else {
-          request.headers.set(
-            "Authorization",
-            `Bearer ${env.NEXT_PUBLIC_302_API_KEY}`
-          );
-        }
+        request.headers.set(
+          "Authorization",
+          `Bearer ${apiKey ?? env.NEXT_PUBLIC_302_API_KEY}`
+        );
 
         // Some 302 endpoints require the language to be set, so we set it here
         if (uiLanguage) {

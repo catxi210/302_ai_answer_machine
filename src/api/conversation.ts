@@ -16,7 +16,6 @@ interface IPrames {
 
 export async function continueConversation(params: IPrames) {
   const { history, apiKey, model, locale } = params;
-  if (!apiKey) return;
 
   const stream = createStreamableValue();
 

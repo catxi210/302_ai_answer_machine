@@ -27,7 +27,7 @@ export function useAnsweringPage(currentTask: Task | undefined) {
   const [isWaitingFirstChunkChat, setIsWaitingFirstChunkChat] = useState(false);
 
   const generateAnswer = useCallback(async () => {
-    if (!apiKey || !currentTask) return;
+    if (!currentTask) return;
 
     setIsGenerating(true);
     setIsWaitingFirstChunk(true);

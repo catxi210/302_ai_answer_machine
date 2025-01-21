@@ -118,22 +118,20 @@ export function AnsweringPage() {
           </Button>
 
           <CollapsibleTrigger>
-            <Button variant="ghost">
-              <LoaderRenderer
-                className="font-bold text-primary"
-                status={isOpen ? "open" : "close"}
-                statuses={{
-                  open: {
-                    text: t("open_conversation"),
-                    icon: <ChevronDown className="size-6" />,
-                  },
-                  close: {
-                    text: t("open_conversation"),
-                    icon: <ChevronRight className="size-6" />,
-                  },
-                }}
-              />
-            </Button>
+            <LoaderRenderer
+              className="font-bold text-primary"
+              status={isOpen ? "open" : "close"}
+              statuses={{
+                open: {
+                  text: t("open_conversation"),
+                  icon: <ChevronDown className="size-6" />,
+                },
+                close: {
+                  text: t("open_conversation"),
+                  icon: <ChevronRight className="size-6" />,
+                },
+              }}
+            />
           </CollapsibleTrigger>
         </div>
 
