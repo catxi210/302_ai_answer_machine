@@ -26,6 +26,11 @@ export const apiKy = ky.create({
 
         if (apiKey) {
           request.headers.set("Authorization", `Bearer ${apiKey}`);
+        } else {
+          request.headers.set(
+            "Authorization",
+            `Bearer ${env.NEXT_PUBLIC_302_API_KEY}`
+          );
         }
 
         // Some 302 endpoints require the language to be set, so we set it here

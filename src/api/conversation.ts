@@ -5,6 +5,7 @@ import { CoreMessage, streamText } from "ai";
 import ky from "ky";
 import { SYSTEM_PROMPT } from "@/constants/prompt";
 import { createAI302 } from "@302ai/ai-sdk";
+import { env } from "@/env";
 
 interface IPrames {
   history: CoreMessage[];
@@ -20,7 +21,7 @@ export async function continueConversation(params: IPrames) {
   const stream = createStreamableValue();
 
   const ai302 = createAI302({
-    apiKey,
+    apiKey: apiKey ?? env.NEXT_PUBLIC_302_API_KEY!,
     baseURL: `${process.env.NEXT_PUBLIC_API_URL}/v1`,
     fetch: async (input: RequestInfo | URL, init?: RequestInit) => {
       const url = input instanceof URL ? input : new URL(input.toString());
