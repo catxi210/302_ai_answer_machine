@@ -9,7 +9,7 @@ const HostRenderer = ({ content, replace = "302.AI" }: Props) => {
   const domain = useDomain();
   const urlPattern = /(https?:\/\/[^\s]+)/g;
   return (
-    <>
+    <div className="break-normal">
       {content.split(" ").map((word, index) => (
         <span key={index}>
           {urlPattern.test(word) || word === replace ? (
@@ -26,7 +26,7 @@ const HostRenderer = ({ content, replace = "302.AI" }: Props) => {
           )}{" "}
         </span>
       ))}
-    </>
+    </div>
   );
 };
 
