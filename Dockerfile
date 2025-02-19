@@ -1,6 +1,10 @@
 # Base image
 FROM node:20.14-alpine AS base
 
+# Install corepack once in base image
+RUN npm install -g corepack@latest && \
+  corepack enable pnpm
+
 # Stage 1: Install dependencies only when needed
 FROM base AS deps
 WORKDIR /app
@@ -10,7 +14,6 @@ COPY package.json pnpm-lock.yaml* ./
 
 # Install necessary system packages before dependencies
 RUN apk add --no-cache libc6-compat && \
-  corepack enable pnpm && \
   pnpm config set registry https://registry.npmjs.org
 
 # Install node_modules separately
@@ -52,7 +55,7 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 # Build application
-RUN corepack enable pnpm && pnpm run build
+RUN pnpm run build
 
 # Stage 3: Runner stage
 FROM base AS runner
